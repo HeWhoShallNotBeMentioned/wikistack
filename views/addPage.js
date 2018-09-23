@@ -11,23 +11,26 @@ module.exports = () => layout(html`
       <div class="col-sm-10">
         <input id="title" name="title" type="text" class="form-control"/>
       </div >
-      <label for= "author_name" class="col-sm-2 control-label" >Author Name</label>
+      <label for= "name" class="col-sm-2 control-label" >Author Name</label>
       <div class="col-sm-10">
-        <input id="author_name" name = "author_name" type= "text" class="form-control">
+        <input id="name" name = "name" type= "text" class="form-control">
       </div>
-      <label for= "author_email" class="col-sm-2 control-label" >Author E-Mail</label>
+      <label for= "email" class="col-sm-2 control-label" >Author E-Mail</label>
       <div class="col-sm-10">
-        <input id="author_email" name = "author_email" type= "text" class="form-control">
+        <input id="email" name = "email" type= "text" class="form-control">
       </div>
       <label for= "page_content" class="col-sm-2 control-label" >Page Body</label>
       <div class="col-sm-10">
         <input id="page_content" name = "page_content" type= "text" class="form-control">
       </div>
-      <label for= "page_status" class="col-sm-2 control-label" >Page Status</label>
+      <label for="status" class="col-sm-2 control-label">Status</label>
       <div class="col-sm-10">
-        <input id="page_status" name = "page_status" type= "text" class="form-control">
+        <select name="page_status">
+          <option>open</option>
+          <option>closed</option>
+        </select>
       </div>
-    </div>
+      </div>
 
     <div class="col-sm-offset-2 col-sm-10">
       <button type="submit" class="btn btn-primary">submit</button>
